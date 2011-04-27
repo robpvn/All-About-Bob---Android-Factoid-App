@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, MainWindow!</string>
-    <string name="app_name">AllAboutBob</string>
+    <string name="title">This is Bob, he\'s a very awesome guy.</string>
+    <string name="app_name">All About Bob</string>
+    <string name="next_fact_button">Press here for another awesome fact!</string>
+	<string name="didyouknow">Did you know?</string>
+	<string-array name="fun_facts">
+		<item>fun fact 1</item>
+		<item>fun fact 2 is long long long long long long long long long long long long yeah really  long</item>
+		<item>fun fact 3 is short.</item>
+		<item>fun fact 4 likes to ramble on and on and on and more longer on for great long stretches of time and time again. One more time, everybody!  music makes the people happy, clappy, and lappy as larry.</item>
+		<item>fun fact 5</item>
+		<item>fun fact 6 trrrlaksksksskksddvnsujvnsvnsv sddjvuunspvnsvnu sdvunsvunsundvvp </item>
+		<item>fun fact 7</item>
+		<item>fun fact 8 could really use a hacker typewriter</item>
+		<item>fun fact 9</item>
+		<item>fun fact 10 like to ramble on and on and on and more longer on for great long stretches of time and time again.</item>
+	</string-array>
+	<string name="countdown_date">22 Jun 2004 12:16:00 GMT+0200</string>
+	<string name="countdown_beforetext">until Bob retires!</string>
+	<string name="countdown_aftertext">since Bob retired!</string>
+	<string name="countdown_prepend">It\'s</string>
 </resources>

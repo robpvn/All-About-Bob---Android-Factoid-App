@@ -6,9 +6,10 @@
     >
     <RelativeLayout android:layout_width="fill_parent" android:id="@+id/relativeLayout1" android:layout_height="fill_parent">
         <ImageView android:id="@+id/pictureImageView" android:layout_alignParentTop="false" android:layout_alignParentLeft="true" android:src="@drawable/profile" android:layout_height="210dip" android:layout_width="230dip"></ImageView>
-        <TextView android:layout_width="wrap_content" android:layout_toRightOf="@+id/pictureImageView" android:layout_height="wrap_content" android:text="TextView" android:layout_alignBottom="@+id/pictureImageView" android:id="@+id/funfactTextView"></TextView>
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_toRightOf="@+id/pictureImageView" android:layout_alignTop="@+id/pictureImageView" android:id="@+id/factsAboutTextView"></TextView>
-        <TextView android:layout_width="wrap_content" android:layout_below="@+id/factsAboutTextView" android:layout_height="wrap_content" android:text="TextView" android:layout_alignLeft="@+id/factsAboutTextView" android:layout_alignRight="@+id/factsAboutTextView" android:id="@+id/timerTextView"></TextView>
-        <Button android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:text="Button" android:layout_width="fill_parent" android:id="@+id/nextFactoidButton"></Button>
+        <TextView android:layout_toRightOf="@+id/pictureImageView" android:layout_height="wrap_content" android:text="TextView" android:layout_alignBottom="@+id/pictureImageView" android:id="@+id/funfactTextView" android:layout_width="match_parent"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_above="@+id/funfactTextView" android:layout_alignLeft="@+id/funfactTextView" android:layout_alignRight="@+id/funfactTextView" android:id="@+id/didYouKnowTextView" android:text="@string/didyouknow" android:layout_width="match_parent"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_toRightOf="@+id/pictureImageView" android:layout_alignTop="@+id/pictureImageView" android:id="@+id/factsAboutTextView" android:text="@string/title" android:layout_width="match_parent"></TextView>
+        <TextView android:layout_below="@+id/factsAboutTextView" android:layout_height="wrap_content" android:text="TextView" android:layout_alignLeft="@+id/factsAboutTextView" android:layout_alignRight="@+id/factsAboutTextView" android:id="@+id/timerTextView" android:layout_width="match_parent"></TextView>
+        <Button android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:id="@+id/nextFactoidButton" android:text="@string/next_fact_button"></Button>
     </RelativeLayout>
 </LinearLayout>

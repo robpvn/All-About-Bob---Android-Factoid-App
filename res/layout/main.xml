@@ -6,9 +6,10 @@
     >
     <RelativeLayout android:layout_width="fill_parent" android:id="@+id/relativeLayout1" android:layout_height="fill_parent">
         <ImageView android:layout_alignParentTop="true" android:id="@+id/pictureImageView" android:layout_width="fill_parent" android:src="@drawable/profile" android:layout_height="250dip"></ImageView>
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@+id/pictureImageView" android:layout_alignLeft="@+id/pictureImageView" android:layout_alignRight="@+id/pictureImageView" android:id="@+id/factsAboutTextView"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/pictureImageView" android:layout_alignLeft="@+id/pictureImageView" android:layout_alignRight="@+id/pictureImageView" android:id="@+id/factsAboutTextView" android:text="@string/title"></TextView>
         <TextView android:layout_width="wrap_content" android:layout_below="@+id/factsAboutTextView" android:layout_height="wrap_content" android:text="TextView" android:layout_alignLeft="@+id/factsAboutTextView" android:layout_alignRight="@+id/factsAboutTextView" android:id="@+id/timerTextView"></TextView>
-        <Button android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:text="Button" android:layout_width="fill_parent" android:id="@+id/nextFactoidButton"></Button>
+        <Button android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:id="@+id/nextFactoidButton" android:text="@string/next_fact_button"></Button>
         <TextView android:layout_above="@+id/nextFactoidButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_alignLeft="@+id/nextFactoidButton" android:layout_alignRight="@+id/nextFactoidButton" android:id="@+id/funfactTextView"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_above="@+id/funfactTextView" android:layout_alignLeft="@+id/funfactTextView" android:layout_alignRight="@+id/funfactTextView" android:id="@+id/didYouKnowTextView" android:text="@string/didyouknow"></TextView>
     </RelativeLayout>
 </LinearLayout>
