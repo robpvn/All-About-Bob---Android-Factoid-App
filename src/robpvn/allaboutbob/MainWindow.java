@@ -102,18 +102,20 @@ public class MainWindow extends Activity implements OnClickListener {
 		public void run() {	
 			Date now = new Date();
 
-			
+			//String format = getResources().getString(R.string.countdown_format);
+			String format = "y \'years,\' M \'months,\' d \'days, \'H \'hours and \' m \'minutes\'";
+			//TODO: Needs to be made a string resource.
 
 			if (now.before(eventDate)) {	//In the future
 				String elapsed = DurationFormatUtils.formatPeriod(now.getTime(), eventDate.getTime(), 
-				"y \'years,\' M \'months,\' d \'days, \'H \'hours and \' m \'minutes\'");
+				format);
 				
 				timerText.setText(getResources().getString(R.string.countdown_prepend)
 						+ " " + elapsed + " " 
 						+ getResources().getString(R.string.countdown_beforetext));
 			} else {						//In the past
 				String elapsed = DurationFormatUtils.formatPeriod(eventDate.getTime(), now.getTime(), 
-				"y \'years,\' M \'months,\' d \'days, \'H \'hours and \' m \'minutes\'");
+						format);
 				
 				timerText.setText(getResources().getString(R.string.countdown_prepend)
 						+ " " + elapsed + " " 
